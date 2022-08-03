@@ -1,0 +1,1523 @@
+2022/08/01 23:01:27 main.go:15: test
+2022/08/02 07:03:51 users.go:32: no such table: users
+2022/08/02 07:05:51 users.go:32: no such table: users
+2022/08/02 22:06:11 users.go:59: near "where": syntax error
+2022/08/02 23:53:17 todos.go:83: near "where": syntax error
+2022/08/03 22:33:00 server.go:3197: http: panic serving [::1]:58400: template: top.html:1: function "difine" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000a2100})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000ba000}, {0x448be80, 0x458ec10}, {0xc0000999f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000ba000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0000ba000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000ba000}, 0xc0000a6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e030?}, {0x45928a0, 0xc0000ba000}, 0xc0000a6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129400, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:00 server.go:3197: http: panic serving [::1]:58401: template: top.html:1: function "difine" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0001111a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001920e0}, {0x448be80, 0x458ec10}, {0xc00012f9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001920e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0001920e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001920e0}, 0xc000184100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001156b0?}, {0x45928a0, 0xc0001920e0}, 0xc000184100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001294a0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:00 server.go:3197: http: panic serving [::1]:58402: template: top.html:1: function "difine" not defined
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012120})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000ba0e0}, {0x448be80, 0x458ec10}, {0xc0000999f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000ba0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0000ba0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000ba0e0}, 0xc0000a6200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e570?}, {0x45928a0, 0xc0000ba0e0}, 0xc0000a6200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000dc000, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58407: template: top.html:1: function "difine" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012280})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000242000}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000242000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc000242000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000242000}, 0xc00023c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e4b0?}, {0x45928a0, 0xc000242000}, 0xc00023c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a000, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58408: template: top.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000123c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002420e0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002420e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0002420e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002420e0}, 0xc00023c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e420?}, {0x45928a0, 0xc0002420e0}, 0xc00023c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a0a0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58409: template: top.html:1: function "difine" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000a2240})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001921c0}, {0x448be80, 0x458ec10}, {0xc0000589f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001921c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0001921c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001921c0}, 0xc000184300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115ce0?}, {0x45928a0, 0xc0001921c0}, 0xc000184300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129540, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58410: template: top.html:1: function "difine" not defined
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000a2380})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000ba1c0}, {0x448be80, 0x458ec10}, {0xc0000999f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000ba1c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0000ba1c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000ba1c0}, 0xc0000a6400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009eae0?}, {0x45928a0, 0xc0000ba1c0}, 0xc0000a6400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001295e0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58411: template: top.html:1: function "difine" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012490})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000ba2a0}, {0x448be80, 0x458ec10}, {0xc0000589f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000ba2a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0000ba2a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000ba2a0}, 0xc000184500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c8120?}, {0x45928a0, 0xc0000ba2a0}, 0xc000184500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129680, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:01 server.go:3197: http: panic serving [::1]:58412: template: top.html:1: function "difine" not defined
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012540})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001922a0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001922a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0001922a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001922a0}, 0xc00023c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f230?}, {0x45928a0, 0xc0001922a0}, 0xc00023c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a140, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:05 server.go:3197: http: panic serving [::1]:58432: template: top.html:1: function "difine" not defined
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000125f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000192380}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000192380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc000192380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000192380}, 0xc000184700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c8480?}, {0x45928a0, 0xc000192380}, 0xc000184700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a1e0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:05 server.go:3197: http: panic serving [::1]:58433: template: top.html:1: function "difine" not defined
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111410})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002421c0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002421c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0002421c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002421c0}, 0xc00023c500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f4d0?}, {0x45928a0, 0xc0002421c0}, 0xc00023c500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a280, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:05 server.go:3197: http: panic serving [::1]:58434: template: top.html:1: function "difine" not defined
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000192460}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000192460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc000192460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000192460}, 0xc000184a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c8a80?}, {0x45928a0, 0xc000192460}, 0xc000184a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129720, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58435: template: top.html:1: function "difine" not defined
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0001116b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000192540}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000192540?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc000192540?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000192540}, 0xc00023c700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fa10?}, {0x45928a0, 0xc000192540}, 0xc00023c700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001297c0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58436: template: top.html:1: function "difine" not defined
+goroutine 72 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0001117f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000192620}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000192620?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc000192620?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000192620}, 0xc000184c00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c90b0?}, {0x45928a0, 0xc000192620}, 0xc000184c00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129860, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58437: template: top.html:1: function "difine" not defined
+goroutine 79 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012740})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000192700}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000192700?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc000192700?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000192700}, 0xc000184f00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c9c20?}, {0x45928a0, 0xc000192700}, 0xc000184f00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129900, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58438: template: top.html:1: function "difine" not defined
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012870})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002422a0}, {0x448be80, 0x458ec10}, {0xc0000589f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002422a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0002422a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002422a0}, 0xc0000a6700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f470?}, {0x45928a0, 0xc0002422a0}, 0xc0000a6700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a320, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58439: template: top.html:1: function "difine" not defined
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111930})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000242380}, {0x448be80, 0x458ec10}, {0xc00005f9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000242380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc000242380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000242380}, 0xc00023c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fcb0?}, {0x45928a0, 0xc000242380}, 0xc00023c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a3c0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58440: template: top.html:1: function "difine" not defined
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000129b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000ba380}, {0x448be80, 0x458ec10}, {0xc0000999f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000ba380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0000ba380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000ba380}, 0xc0000a6800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f5c0?}, {0x45928a0, 0xc0000ba380}, 0xc0000a6800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000dc0a0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58445: template: top.html:1: function "difine" not defined
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012b00})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000242460}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000242460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc000242460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000242460}, 0xc000185100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002e2120?}, {0x45928a0, 0xc000242460}, 0xc000185100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a460, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58446: template: top.html:1: function "difine" not defined
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012c40})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000242540}, {0x448be80, 0x458ec10}, {0xc00005f9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000242540?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc000242540?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000242540}, 0xc00023cb00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000300780?}, {0x45928a0, 0xc000242540}, 0xc00023cb00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a500, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:06 server.go:3197: http: panic serving [::1]:58447: template: top.html:1: function "difine" not defined
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111a90})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001927e0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001927e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0001927e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001927e0}, 0xc000185200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002e21e0?}, {0x45928a0, 0xc0001927e0}, 0xc000185200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001299a0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:11 server.go:3197: http: panic serving [::1]:58468: template: top.html:1: function "difine" not defined
+goroutine 87 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111be0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001928c0}, {0x448be80, 0x458ec10}, {0xc0000999f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001928c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x45928a0?, 0xc0001928c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001928c0}, 0xc0000a6a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f9b0?}, {0x45928a0, 0xc0001928c0}, 0xc0000a6a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129a40, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:11 server.go:3197: http: panic serving [::1]:58469: template: top.html:1: function "difine" not defined
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000111d20})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001929a0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001929a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc0001929a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001929a0}, 0xc000185400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002e2810?}, {0x45928a0, 0xc0001929a0}, 0xc000185400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000129ae0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:11 server.go:3197: http: panic serving [::1]:58470: template: top.html:1: function "difine" not defined
+goroutine 104 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012d90})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000242620}, {0x448be80, 0x458ec10}, {0xc00005f9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000242620?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x45928a0?, 0xc000242620?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000242620}, 0xc00023ce00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301260?}, {0x45928a0, 0xc000242620}, 0xc00023ce00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023a5a0, {0x4592b58, 0xc000115560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:17 server.go:3197: http: panic serving [::1]:58497: template: top.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000920a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0000}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b0000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0000}, 0xc00019c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186030?}, {0x45928a0, 0xc0001b0000}, 0xc00019c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00010f360, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:17 server.go:3197: http: panic serving [::1]:58498: template: top.html:1: function "difine" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000921e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000de000}, {0x448be80, 0x458ec10}, {0xc0001159f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000de000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0000de000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000de000}, 0xc000158100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001016b0?}, {0x45928a0, 0xc0000de000}, 0xc000158100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00010f400, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:17 server.go:3197: http: panic serving [::1]:58499: template: top.html:1: function "difine" not defined
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000092330})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000de0e0}, {0x448be80, 0x458ec10}, {0xc0000fa9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000de0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0000de0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000de0e0}, 0xc0000d2100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000947e0?}, {0x45928a0, 0xc0000de0e0}, 0xc0000d2100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f4000, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:18 server.go:3197: http: panic serving [::1]:58504: template: top.html:1: function "difine" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000923c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b00e0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b00e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0001b00e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b00e0}, 0xc000158200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000101770?}, {0x45928a0, 0xc0001b00e0}, 0xc000158200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca000, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:18 server.go:3197: http: panic serving [::1]:58505: template: top.html:1: function "difine" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000092470})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b01c0}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b01c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b01c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b01c0}, 0xc00019c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001864b0?}, {0x45928a0, 0xc0001b01c0}, 0xc00019c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca0a0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:18 server.go:3197: http: panic serving [::1]:58506: template: top.html:1: function "difine" not defined
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a300})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b02a0}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b02a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b02a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b02a0}, 0xc00019c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186c90?}, {0x45928a0, 0xc0001b02a0}, 0xc00019c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca140, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:48 server.go:3197: http: panic serving [::1]:58629: template: top.html:1: function "difine" not defined
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a3b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001660e0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001660e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001660e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001660e0}, 0xc000158300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000101800?}, {0x45928a0, 0xc0001660e0}, 0xc000158300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca1e0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:48 server.go:3197: http: panic serving [::1]:58630: template: top.html:1: function "difine" not defined
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a4f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0380}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0001b0380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0380}, 0xc00019c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001872c0?}, {0x45928a0, 0xc0001b0380}, 0xc00019c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca280, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:33:48 server.go:3197: http: panic serving [::1]:58631: template: top.html:1: function "difine" not defined
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000092530})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0460}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0001b0460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0460}, 0xc00019ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000187a70?}, {0x45928a0, 0xc0001b0460}, 0xc00019ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca320, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58688: template: top.html:1: function "difine" not defined
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a630})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000de1c0}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000de1c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0000de1c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000de1c0}, 0xc00019cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000187e00?}, {0x45928a0, 0xc0000de1c0}, 0xc00019cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f40a0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58689: template: top.html:1: function "difine" not defined
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a770})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0540}, {0x448be80, 0x458ec10}, {0xc0000fa9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0540?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b0540?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0540}, 0xc0000d2300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095350?}, {0x45928a0, 0xc0001b0540}, 0xc0000d2300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f4140, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58690: template: top.html:1: function "difine" not defined
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000013210})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0620}, {0x448be80, 0x458ec10}, {0xc0000fa9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0620?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b0620?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0620}, 0xc00019ce00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fc510?}, {0x45928a0, 0xc0001b0620}, 0xc00019ce00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ca3c0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58695: template: top.html:1: function "difine" not defined
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a960})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b0700}, {0x448be80, 0x458ec10}, {0xc0000fa9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b0700?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577c8?, {0x45928a0?, 0xc0001b0700?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b0700}, 0xc00019d000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fc8a0?}, {0x45928a0, 0xc0001b0700}, 0xc00019d000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00010f4a0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58696: template: top.html:1: function "difine" not defined
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000926b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001b07e0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001b07e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0001b07e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001b07e0}, 0xc000158500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000101e60?}, {0x45928a0, 0xc0001b07e0}, 0xc000158500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00010f540, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:34:03 server.go:3197: http: panic serving [::1]:58697: template: top.html:1: function "difine" not defined
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000013360})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001661c0}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001661c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576d8?, {0x45928a0?, 0xc0001661c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001661c0}, 0xc0000d2500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095a10?}, {0x45928a0, 0xc0001661c0}, 0xc0000d2500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f41e0, {0x4592b58, 0xc000101560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:35:43 server.go:3197: http: panic serving [::1]:59102: template: top.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0001840a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000b0000}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000b0000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc0000b0000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000b0000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x45928a0, 0xc0000b0000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000117400, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:35:43 server.go:3197: http: panic serving [::1]:59103: template: top.html:1: function "difine" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000981b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000b00e0}, {0x448be80, 0x458ec10}, {0xc00011d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000b00e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc0000b00e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000b00e0}, 0xc000160100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001096b0?}, {0x45928a0, 0xc0000b00e0}, 0xc000160100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001174a0, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:35:43 server.go:3197: http: panic serving [::1]:59104: template: top.html:1: function "difine" not defined
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000131f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e0e0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc00016e0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e0e0}, 0xc000160200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001097d0?}, {0x45928a0, 0xc00016e0e0}, 0xc000160200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000117540, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:27 server.go:3197: http: panic serving [::1]:59328: template: top.html:1: function "difine" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a080})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e0e0}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc00016e0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e0e0}, 0xc00018e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186030?}, {0x45928a0, 0xc00016e0e0}, 0xc00018e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000117360, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:27 server.go:3197: http: panic serving [::1]:59329: template: top.html:1: function "difine" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000920d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e1c0}, {0x448be80, 0x458ec10}, {0xc00011d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e1c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc00016e1c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e1c0}, 0xc000160100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001096b0?}, {0x45928a0, 0xc00016e1c0}, 0xc000160100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000117400, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:27 server.go:3197: http: panic serving [::1]:59330: template: top.html:1: function "difine" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000092230})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0000f6000}, {0x448be80, 0x458ec10}, {0xc0000e29f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0000f6000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc0000f6000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0000f6000}, 0xc0000e6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094330?}, {0x45928a0, 0xc0000f6000}, 0xc0000e6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000d4000, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:28 server.go:3197: http: panic serving [::1]:59331: template: top.html:1: function "difine" not defined
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000013320})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e2a0}, {0x448be80, 0x458ec10}, {0xc0000e29f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e2a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc00016e2a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e2a0}, 0xc0000e6100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000948d0?}, {0x45928a0, 0xc00016e2a0}, 0xc0000e6100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001174a0, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:28 server.go:3197: http: panic serving [::1]:59332: template: top.html:1: function "difine" not defined
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000013470})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e380}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc00016e380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e380}, 0xc000160300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109f20?}, {0x45928a0, 0xc00016e380}, 0xc000160300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000117540, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:28 server.go:3197: http: panic serving [::1]:59333: template: top.html:1: function "difine" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a1e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d4000}, {0x448be80, 0x458ec10}, {0xc00005a9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d4000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc0001d4000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d4000}, 0xc00018e100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186240?}, {0x45928a0, 0xc0001d4000}, 0xc00018e100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c6000, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:33 server.go:3197: http: panic serving [::1]:59334: template: top.html:1: function "difine" not defined
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a340})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d40e0}, {0x448be80, 0x458ec10}, {0xc0000e39f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d40e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc0001d40e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d40e0}, 0xc0000e6200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094930?}, {0x45928a0, 0xc0001d40e0}, 0xc0000e6200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c60a0, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:33 server.go:3197: http: panic serving [::1]:59335: template: top.html:1: function "difine" not defined
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a490})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d41c0}, {0x448be80, 0x458ec10}, {0xc00005a9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d41c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc0001d41c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d41c0}, 0xc00018e300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001868a0?}, {0x45928a0, 0xc0001d41c0}, 0xc00018e300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c6140, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:38:33 server.go:3197: http: panic serving [::1]:59336: template: top.html:1: function "difine" not defined
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a5f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d42a0}, {0x448be80, 0x458ec10}, {0xc00005a9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d42a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc0001d42a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d42a0}, 0xc00018e600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000187470?}, {0x45928a0, 0xc0001d42a0}, 0xc00018e600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c61e0, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:39:03 server.go:3197: http: panic serving [::1]:59337: template: top.html:1: function "difine" not defined
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a750})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d4380}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d4380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x45928a0?, 0xc0001d4380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d4380}, 0xc000160600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208a80?}, {0x45928a0, 0xc0001d4380}, 0xc000160600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c6280, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:39:03 server.go:3197: http: panic serving [::1]:59338: template: top.html:1: function "difine" not defined
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000135d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00016e460}, {0x448be80, 0x458ec10}, {0xc00005a9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00016e460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc00016e460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00016e460}, 0xc00018e800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000187ad0?}, {0x45928a0, 0xc00016e460}, 0xc00018e800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c6320, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:39:03 server.go:3197: http: panic serving [::1]:59339: template: top.html:1: function "difine" not defined
+goroutine 72 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc00018a8b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0001d4460}, {0x448be80, 0x458ec10}, {0xc0000599f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0001d4460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x45928a0?, 0xc0001d4460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0001d4460}, 0xc00018ea00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003020f0?}, {0x45928a0, 0xc0001d4460}, 0xc00018ea00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001c63c0, {0x4592b58, 0xc000109560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:00 server.go:3197: http: panic serving [::1]:59342: template: top.html:1: function "difine" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000212110})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc000238000}, {0x448be80, 0x458ec10}, {0xc0000b39f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc000238000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc000238000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc000238000}, 0xc000224000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e030?}, {0x45928a0, 0xc000238000}, 0xc000224000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b1360, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:00 server.go:3197: http: panic serving [::1]:59343: template: top.html:1: function "difine" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000991e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a0e0}, {0x448be80, 0x458ec10}, {0xc0000589f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00019a0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a0e0}, 0xc00018c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009d6b0?}, {0x45928a0, 0xc00019a0e0}, 0xc00018c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b1400, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:00 server.go:3197: http: panic serving [::1]:59344: template: top.html:1: function "difine" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0002121b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00028e000}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00028e000?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00028e000?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00028e000}, 0xc000282000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e090?}, {0x45928a0, 0xc00028e000}, 0xc000282000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000280000, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59345: template: top.html:1: function "difine" not defined
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000099280})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002380e0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002380e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc0002380e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002380e0}, 0xc000282200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e510?}, {0x45928a0, 0xc0002380e0}, 0xc000282200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00027e000, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59346: template: top.html:1: function "difine" not defined
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000993d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a1c0}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a1c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc00019a1c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a1c0}, 0xc000224200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e720?}, {0x45928a0, 0xc00019a1c0}, 0xc000224200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00027e0a0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59347: template: top.html:1: function "difine" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000099530})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a2a0}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a2a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc00019a2a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a2a0}, 0xc00018c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001d4540?}, {0x45928a0, 0xc00019a2a0}, 0xc00018c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b14a0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59348: template: top.html:1: function "difine" not defined
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012250})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00028e0e0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00028e0e0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc00028e0e0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00028e0e0}, 0xc000282300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e570?}, {0x45928a0, 0xc00028e0e0}, 0xc000282300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b1540, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59349: template: top.html:1: function "difine" not defined
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012310})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a380}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00019a380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a380}, 0xc00018c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001d4ba0?}, {0x45928a0, 0xc00019a380}, 0xc00018c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b15e0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:01 server.go:3197: http: panic serving [::1]:59350: template: top.html:1: function "difine" not defined
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000099730})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a460}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a460?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00019a460?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a460}, 0xc00018c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001d4f60?}, {0x45928a0, 0xc00019a460}, 0xc00018c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b1680, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:02 server.go:3197: http: panic serving [::1]:59351: template: top.html:1: function "difine" not defined
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000123d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00019a540}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00019a540?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00019a540?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00019a540}, 0xc000282600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007ed50?}, {0x45928a0, 0xc00019a540}, 0xc000282600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b1720, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:02 server.go:3197: http: panic serving [::1]:59352: template: top.html:1: function "difine" not defined
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012520})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00028e1c0}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00028e1c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc00028e1c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00028e1c0}, 0xc00018ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001d55c0?}, {0x45928a0, 0xc00028e1c0}, 0xc00018ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000b17c0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:02 server.go:3197: http: panic serving [::1]:59353: template: top.html:1: function "difine" not defined
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000012680})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00028e2a0}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00028e2a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc00028e2a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00028e2a0}, 0xc000282800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f530?}, {0x45928a0, 0xc00028e2a0}, 0xc000282800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002800a0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:03 server.go:3197: http: panic serving [::1]:59354: template: top.html:1: function "difine" not defined
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0002123e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002381c0}, {0x448be80, 0x458ec10}, {0xc00005e9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002381c0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x45928a0?, 0xc0002381c0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002381c0}, 0xc00018cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001d59e0?}, {0x45928a0, 0xc0002381c0}, 0xc00018cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00027e140, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:03 server.go:3197: http: panic serving [::1]:59355: template: top.html:1: function "difine" not defined
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc000212530})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc0002382a0}, {0x448be80, 0x458ec10}, {0xc00005d9f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc0002382a0?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc0002382a0?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc0002382a0}, 0xc000224400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020ec30?}, {0x45928a0, 0xc0002382a0}, 0xc000224400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00027e1e0, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/03 22:40:03 server.go:3197: http: panic serving [::1]:59356: template: top.html:1: function "difine" not defined
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x449b900, 0xc0000998c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x45928a0?, 0xc00028e380}, {0x448be80, 0x458ec10}, {0xc0002099f0?, 0x2, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:17 +0x106
+Go_CRUD/app/controllers.top({0x45928a0?, 0xc00028e380?}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:17 +0x75
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x45928a0?, 0xc00028e380?}, 0x4010925?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x45928a0, 0xc00028e380}, 0xc000282a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fb30?}, {0x45928a0, 0xc00028e380}, 0xc000282a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000280140, {0x4592b58, 0xc00009d560})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
