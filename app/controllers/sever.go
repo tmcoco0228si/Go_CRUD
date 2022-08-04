@@ -26,13 +26,14 @@ func StartMainServer() error {
 	files := http.FileServer(http.Dir(config.Config.Static))
 	http.Handle("/static/", http.StripPrefix("/static/", files))
 
-	//(ポート番号, デフォルトマルチプレクサ)
-	//登録されていないURLにアクセスすると404を返す設定がnil
+
 	//URL登録(url,template)
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
 
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+	//(ポート番号, デフォルトマルチプレクサ)
+	//登録されていないURLにアクセスすると404を返す設定がnil
+	return http.ListenAndServe(":" + config.Config.Port, nil)
 }
