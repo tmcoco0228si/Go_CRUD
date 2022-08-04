@@ -80,6 +80,8 @@ func (u *User) DeleteUser() (err error) {
 	return err
 }
 
+
+//セレクト(ユーザが入力したEmialで探す)
 func GetUserByEmail(email string) (user User, err error) {
 	user = User{}
 	cmd := `select id, uuid, name, email, password, created_at from users where email = ?`

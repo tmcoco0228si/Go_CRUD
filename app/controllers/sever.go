@@ -15,6 +15,7 @@ func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 		files = append(files, fmt.Sprintf("app/views/templates/%s.html", file))
 	}
 	//エラーの際にパニック状態になるのが[Must]
+	//Template構造体を返している
 	templates := template.Must(template.ParseFiles(files...))
 	//(レスポンス, 実行するテンプレート, data)
 	templates.ExecuteTemplate(w, "layout", data)

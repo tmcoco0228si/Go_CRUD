@@ -31,20 +31,22 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//ログインハンドラ
+//ログイン画面を返すハンドラ
 func login(w http.ResponseWriter, r *http.Request) {
 	generateHTML(w, nil, "layout", "public_navbar", "login")
 }
 
+//ログイン セッション確認ハンドラ
 func authenticate(w http.ResponseWriter, r *http.Request) {
+	//パラメータを全て取得(ParseForm)
 	err := r.ParseForm()
+	
 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
 
 	if err != nil {
 		log.Println(err)
 		http.Redirect(w, r, "/login", 302)
 	}
-
 	if user.Password == models.Encrypt(r.PostFormValue("password")) {
 		session, err := user.CreateSession()
 		if err != nil {
@@ -52,11 +54,11 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 		}
 
 		cookie := http.Cookie{
-			Name: "_cookie",
-
+			Name:     "_cookie",
 			Value:    session.UUID,
 			HttpOnly: true,
 		}
+		//レスポンスヘッダーにセッション設定
 		http.SetCookie(w, &cookie)
 		http.Redirect(w, r, "/", 302)
 	} else {
