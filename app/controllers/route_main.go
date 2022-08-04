@@ -14,5 +14,5 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// //(レスポンスW,データをhtmlに渡す)
 	// t.Execute(w, "hello")
 
-	generateHTML(w, "hello", "layout", "top")
+	generateHTML(w, "hello", "layout", "public_navbar", "top")
 }
