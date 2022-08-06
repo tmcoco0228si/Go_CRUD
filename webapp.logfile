@@ -2514,3 +2514,2560 @@ created by net/http.(*Server).Serve
 2022/08/04 22:29:22 users.go:99: no such table: session
 2022/08/04 22:29:22 main.go:18: sql: no rows in result set
 2022/08/04 22:30:11 main.go:18: sql: expected 5 destination arguments in Scan, not 4
+2022/08/06 14:20:02 server.go:3197: http: panic serving [::1]:49691: open app/views/templates//todos.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000180690})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000198000}, {0x448f9e0, 0x4593bd8}, {0xc00009b9d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc000198000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc000198000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000198000}, 0xc00018e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180030?}, {0x4597880, 0xc000198000}, 0xc00018e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9360, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:02 server.go:3197: http: panic serving [::1]:49692: open app/views/templates//todos.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a3c20})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001980e0}, {0x448f9e0, 0x4593bd8}, {0xc0000589d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc0001980e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc0001980e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001980e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a36e0?}, {0x4597880, 0xc0001980e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9400, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:02 server.go:3197: http: panic serving [::1]:49693: open app/views/templates//todos.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0002006f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001981c0}, {0x448f9e0, 0x4593bd8}, {0xc0000599d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc0001981c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc0001981c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001981c0}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3ce0?}, {0x4597880, 0xc0001981c0}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c94a0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:03 server.go:3197: http: panic serving [::1]:49694: open app/views/templates//todos.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000200d20})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00011c0e0}, {0x448f9e0, 0x4593bd8}, {0xc00005a9d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc00011c0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00011c0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00011c0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3d40?}, {0x4597880, 0xc00011c0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00024e000, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:03 server.go:3197: http: panic serving [::1]:49695: open app/views/templates//todos.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000181110})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000274000}, {0x448f9e0, 0x4593bd8}, {0xc0002549d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc000274000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc000274000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000274000}, 0xc000258000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000200810?}, {0x4597880, 0xc000274000}, 0xc000258000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00024e0a0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:03 server.go:3197: http: panic serving [::1]:49696: open app/views/templates//todos.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0002015f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001982a0}, {0x448f9e0, 0x4593bd8}, {0xc0000599d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc0001982a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc0001982a0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001982a0}, 0xc00018e400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181230?}, {0x4597880, 0xc0001982a0}, 0xc00018e400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001d0000, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:08 server.go:3197: http: panic serving [::1]:49697: open app/views/templates//todos.html: no such file or directory
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00014c1e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002740e0}, {0x448f9e0, 0x4593bd8}, {0xc00005a9d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc0002740e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc0002740e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002740e0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00014c0f0?}, {0x4597880, 0xc0002740e0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00024e140, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:08 server.go:3197: http: panic serving [::1]:49698: open app/views/templates//todos.html: no such file or directory
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001819b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00011c1c0}, {0x448f9e0, 0x4593bd8}, {0xc0002549d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc00011c1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00011c1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00011c1c0}, 0xc000258200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000201770?}, {0x4597880, 0xc00011c1c0}, 0xc000258200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00024e1e0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:20:08 server.go:3197: http: panic serving [::1]:49699: open app/views/templates//todos.html: no such file or directory
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00027e120})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000198380}, {0x448f9e0, 0x4593bd8}, {0xc0000599d0?, 0x4, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.top({0x4597880, 0xc000198380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:19 +0xed
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc000198380?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000198380}, 0xc00018e600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181a70?}, {0x4597880, 0xc000198380}, 0xc00018e600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001d00a0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49718: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001c8660})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000194380}, {0x0, 0x0}, {0xc00016b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000194380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc000194380?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000194380}, 0xc000146600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x4597880, 0xc000194380}, 0xc000146600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000141360, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49719: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001c8bd0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000194460}, {0x0, 0x0}, {0xc0001179e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000194460}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc000194460?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000194460}, 0xc000146100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6e0?}, {0x4597880, 0xc000194460}, 0xc000146100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000141400, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49720: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00025c180})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000216700}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000216700}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc000216700?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000216700}, 0xc00020ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000249c20?}, {0x4597880, 0xc000216700}, 0xc00020ca00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000232500, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49721: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a4570})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c2000}, {0x0, 0x0}, {0xc0000cf9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c2000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c2000?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c2000}, 0xc0000aa000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a4030?}, {0x4597880, 0xc0000c2000}, 0xc0000aa000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002325a0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49722: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001c8cf0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c20e0}, {0x0, 0x0}, {0xc0000cf9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c20e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0000c20e0?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c20e0}, 0xc00020cb00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00025c2a0?}, {0x4597880, 0xc0000c20e0}, 0xc00020cb00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000232640, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:24:59 server.go:3197: http: panic serving [::1]:49723: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 86 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a5020})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c21c0}, {0x0, 0x0}, {0xc0000d19e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c21c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0000c21c0?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c21c0}, 0xc0000aa300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a4ae0?}, {0x4597880, 0xc0000c21c0}, 0xc0000aa300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa000, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:25:00 server.go:3197: http: panic serving [::1]:49724: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001c8de0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002167e0}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002167e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0002167e0?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002167e0}, 0xc0000aa500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a5080?}, {0x4597880, 0xc0002167e0}, 0xc0000aa500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002326e0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:25:00 server.go:3197: http: panic serving [::1]:49725: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0001c9320})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000194540}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000194540}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc000194540?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000194540}, 0xc00020cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00025c3c0?}, {0x4597880, 0xc000194540}, 0xc00020cc00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000232780, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:25:00 server.go:3197: http: panic serving [::1]:49726: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a5140})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000194620}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000194620}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:26 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc000194620?}, 0x40103c5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000194620}, 0xc000146700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c93e0?}, {0x4597880, 0xc000194620}, 0xc000146700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000141a40, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:11 server.go:3197: http: panic serving [::1]:49739: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a5830})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00012e000}, {0x0, 0x0}, {0xc00009d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00012e000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc00012e000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00012e000}, 0xc000116000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010e030?}, {0x4597880, 0xc00012e000}, 0xc000116000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9360, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:11 server.go:3197: http: panic serving [::1]:49740: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007c120})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019c0e0}, {0x0, 0x0}, {0xc0000a19e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019c0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00019c0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019c0e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a56e0?}, {0x4597880, 0xc00019c0e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9400, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:11 server.go:3197: http: panic serving [::1]:49741: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007c750})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000230000}, {0x0, 0x0}, {0xc0000a19e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000230000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc000230000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000230000}, 0xc000224000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007c1e0?}, {0x4597880, 0xc000230000}, 0xc000224000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000222000, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49742: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007c8a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00012e0e0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00012e0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00012e0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00012e0e0}, 0xc000224100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007c7b0?}, {0x4597880, 0xc00012e0e0}, 0xc000224100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00014e000, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49743: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007cde0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002300e0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002300e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc0002300e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002300e0}, 0xc000116100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010e570?}, {0x4597880, 0xc0002300e0}, 0xc000116100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00014e0a0, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49744: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007d440})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002301c0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002301c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc0002301c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002301c0}, 0xc000224200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007cf00?}, {0x4597880, 0xc0002301c0}, 0xc000224200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002220a0, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49745: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00010ef60})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00012e1c0}, {0x0, 0x0}, {0xc0001619e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00012e1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc00012e1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00012e1c0}, 0xc000116200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010ea20?}, {0x4597880, 0xc00012e1c0}, 0xc000116200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000222140, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49746: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007d620})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00012e2a0}, {0x0, 0x0}, {0xc0001619e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00012e2a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00012e2a0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00012e2a0}, 0xc000224300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007d560?}, {0x4597880, 0xc00012e2a0}, 0xc000224300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002221e0, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:12 server.go:3197: http: panic serving [::1]:49747: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00010f4d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019c1c0}, {0x0, 0x0}, {0xc0000a39e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019c1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00019c1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019c1c0}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a5dd0?}, {0x4597880, 0xc00019c1c0}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c94a0, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:13 server.go:3197: http: panic serving [::1]:49748: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007d6b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00012e380}, {0x0, 0x0}, {0xc0000a39e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00012e380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719e68?, {0x4597880?, 0xc00012e380?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00012e380}, 0xc000116400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010f6b0?}, {0x4597880, 0xc00012e380}, 0xc000116400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00014e140, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:13 server.go:3197: http: panic serving [::1]:49749: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007dbf0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002302a0}, {0x0, 0x0}, {0xc0001619e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002302a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc0002302a0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002302a0}, 0xc000116300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010f650?}, {0x4597880, 0xc0002302a0}, 0xc000116300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00014e1e0, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:27:13 server.go:3197: http: panic serving [::1]:49750: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0002b4180})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000230380}, {0x0, 0x0}, {0xc0001619e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000230380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5719f58?, {0x4597880?, 0xc000230380?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000230380}, 0xc000116500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010fc20?}, {0x4597880, 0xc000230380}, 0xc000116500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00014e280, {0x4597b38, 0xc0000a5590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:13 server.go:3197: http: panic serving [::1]:49758: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000111860})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b4000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b4000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000b4000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x4597880, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001274a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:13 server.go:3197: http: panic serving [::1]:49759: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000094510})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001700e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001700e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001700e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001700e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001116e0?}, {0x4597880, 0xc0001700e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127540, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:13 server.go:3197: http: panic serving [::1]:49760: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000094b10})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b40e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b40e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000b40e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b40e0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000945d0?}, {0x4597880, 0xc0000b40e0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ec000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:18 server.go:3197: http: panic serving [::1]:49762: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000095170})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b41c0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b41c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000b41c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b41c0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000111d10?}, {0x4597880, 0xc0000b41c0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ec0a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:18 server.go:3197: http: panic serving [::1]:49763: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000956e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b42a0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b42a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000b42a0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b42a0}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094c30?}, {0x4597880, 0xc0000b42a0}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ec140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:18 server.go:3197: http: panic serving [::1]:49764: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000095d40})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b4380}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b4380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000b4380?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b4380}, 0xc00009c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095800?}, {0x4597880, 0xc0000b4380}, 0xc00009c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ec1e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:48 server.go:3197: http: panic serving [::1]:49765: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000180120})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001701c0}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001701c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0001701c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001701c0}, 0xc00009c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095da0?}, {0x4597880, 0xc0001701c0}, 0xc00009c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001275e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:48 server.go:3197: http: panic serving [::1]:49766: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000180660})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001c4000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001c4000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001c4000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001c4000}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000111e30?}, {0x4597880, 0xc0001c4000}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127680, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:29:48 server.go:3197: http: panic serving [::1]:49767: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc000216300})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001c40e0}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001c40e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001c40e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001c40e0}, 0xc0001e6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180780?}, {0x4597880, 0xc0001c40e0}, 0xc0001e6000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001e4000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:46 server.go:3197: http: panic serving [::1]:49771: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a37a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001ae000}, {0x0, 0x0}, {0xc00009b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001ae000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b7a8?, {0x4597880?, 0xc0001ae000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001ae000}, 0xc000196000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e030?}, {0x4597880, 0xc0001ae000}, 0xc000196000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9360, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:46 server.go:3197: http: panic serving [::1]:49772: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0000a3ce0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00021e0e0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00021e0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b6b8?, {0x4597880?, 0xc00021e0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00021e0e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a36e0?}, {0x4597880, 0xc00021e0e0}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9400, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:46 server.go:3197: http: panic serving [::1]:49773: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007c5d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00028c000}, {0x0, 0x0}, {0xc00009b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00028c000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b6b8?, {0x4597880?, 0xc00028c000?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00028c000}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3e00?}, {0x4597880, 0xc00028c000}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c94a0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49774: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007cc30})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00028c0e0}, {0x0, 0x0}, {0xc00009b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00028c0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b6b8?, {0x4597880?, 0xc00028c0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00028c0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3e60?}, {0x4597880, 0xc00028c0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002ba000, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49775: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00007d1a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00028c1c0}, {0x0, 0x0}, {0xc00009b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00028c1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b7a8?, {0x4597880?, 0xc00028c1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00028c1c0}, 0xc0002bc000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007c6f0?}, {0x4597880, 0xc00028c1c0}, 0xc0002bc000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002ba0a0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49776: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc0002544b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00021e1c0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00021e1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b7a8?, {0x4597880?, 0xc00021e1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00021e1c0}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3f50?}, {0x4597880, 0xc00021e1c0}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9540, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49777: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00018e5d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00021e2a0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00021e2a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b7a8?, {0x4597880?, 0xc00021e2a0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00021e2a0}, 0xc0002bc100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007d260?}, {0x4597880, 0xc00021e2a0}, 0xc0002bc100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c95e0, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49778: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00018eb40})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001ae0e0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001ae0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b6b8?, {0x4597880?, 0xc0001ae0e0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001ae0e0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002545d0?}, {0x4597880, 0xc0001ae0e0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c9680, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:30:47 server.go:3197: http: panic serving [::1]:49779: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e60, 0xc00018f1a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001ae1c0}, {0x0, 0x0}, {0xc00009f9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001ae1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:32 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x571b6b8?, {0x4597880?, 0xc0001ae1c0?}, 0x4010345?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001ae1c0}, 0xc000196100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018ec60?}, {0x4597880, 0xc0001ae1c0}, 0xc000196100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001fc000, {0x4597b38, 0xc0000a3590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:44 server.go:3197: http: panic serving [::1]:49783: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000111890})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b4000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b4000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000b4000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x4597880, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127360, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:44 server.go:3197: http: panic serving [::1]:49784: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0000944e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001700e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001700e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001700e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001700e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001116e0?}, {0x4597880, 0xc0001700e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127400, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:44 server.go:3197: http: panic serving [::1]:49785: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0001800f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000b40e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000b40e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000b40e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000b40e0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000945a0?}, {0x4597880, 0xc0000b40e0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ec000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:45 server.go:3197: http: panic serving [::1]:49786: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000111e60})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001d8000}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001d8000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001d8000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001d8000}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094a50?}, {0x4597880, 0xc0001d8000}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001b6000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:45 server.go:3197: http: panic serving [::1]:49787: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000228450})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001701c0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001701c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0001701c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001701c0}, 0xc0001c8000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180210?}, {0x4597880, 0xc0001701c0}, 0xc0001c8000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001b60a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:33:45 server.go:3197: http: panic serving [::1]:49788: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180c30})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001d80e0}, {0x0, 0x0}, {0xc0001ed9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001d80e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0001d80e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001d80e0}, 0xc0001c8100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001806f0?}, {0x4597880, 0xc0001d80e0}, 0xc0001c8100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001b6140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:39 server.go:3197: http: panic serving [::1]:49792: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000111830})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019e000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019e000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc00019e000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019e000}, 0xc000182000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x4597880, 0xc00019e000}, 0xc000182000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127400, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:39 server.go:3197: http: panic serving [::1]:49793: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180900})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019e0e0}, {0x0, 0x0}, {0xc0001c59e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019e0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc00019e0e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019e0e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001116e0?}, {0x4597880, 0xc00019e0e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001274a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:39 server.go:3197: http: panic serving [::1]:49794: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180f00})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019e1c0}, {0x0, 0x0}, {0xc0001c59e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019e1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc00019e1c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019e1c0}, 0xc000182300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001809c0?}, {0x4597880, 0xc00019e1c0}, 0xc000182300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001e8000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:40 server.go:3197: http: panic serving [::1]:49795: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0001815c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019e2a0}, {0x0, 0x0}, {0xc0001c59e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019e2a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc00019e2a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019e2a0}, 0xc000182600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181080?}, {0x4597880, 0xc00019e2a0}, 0xc000182600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001e80a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:40 server.go:3197: http: panic serving [::1]:49796: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0000947e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be0e0}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be0e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be0e0}, 0xc000182500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181020?}, {0x4597880, 0xc0000be0e0}, 0xc000182500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001e8140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:40 server.go:3197: http: panic serving [::1]:49797: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000094de0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be1c0}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be1c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be1c0}, 0xc0000a8200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000948a0?}, {0x4597880, 0xc0000be1c0}, 0xc0000a8200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f4000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:46 server.go:3197: http: panic serving [::1]:49798: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000111dd0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001700e0}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001700e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0001700e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001700e0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000111890?}, {0x4597880, 0xc0001700e0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f40a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:46 server.go:3197: http: panic serving [::1]:49799: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000094ff0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001701c0}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001701c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001701c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001701c0}, 0xc0000a8300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094f00?}, {0x4597880, 0xc0001701c0}, 0xc0000a8300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f4140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:35:46 server.go:3197: http: panic serving [::1]:49800: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00024c300})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be2a0}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be2a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be2a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be2a0}, 0xc0000a8400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000950b0?}, {0x4597880, 0xc0000be2a0}, 0xc0000a8400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f41e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:36:16 server.go:3197: http: panic serving [::1]:49801: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00024c9c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001702a0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001702a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001702a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001702a0}, 0xc000182700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181620?}, {0x4597880, 0xc0001702a0}, 0xc000182700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127540, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:36:16 server.go:3197: http: panic serving [::1]:49802: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000181b60})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc00019e380}, {0x0, 0x0}, {0xc0001c59e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc00019e380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc00019e380?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc00019e380}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00024c480?}, {0x4597880, 0xc00019e380}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001275e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:36:16 server.go:3197: http: panic serving [::1]:49803: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00024cfc0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170380}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc000170380?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170380}, 0xc00012c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00024ca80?}, {0x4597880, 0xc000170380}, 0xc00012c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127680, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:34 server.go:3197: http: panic serving [::1]:49892: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00009e330})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000208000}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000208000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc000208000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000208000}, 0xc00007e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e030?}, {0x4597880, 0xc000208000}, 0xc00007e000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000141400, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:34 server.go:3197: http: panic serving [::1]:49893: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00009e8a0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c80e0}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c80e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c80e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c80e0}, 0xc000146100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6e0?}, {0x4597880, 0xc0000c80e0}, 0xc000146100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001414a0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:34 server.go:3197: http: panic serving [::1]:49894: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00011b830})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c81c0}, {0x0, 0x0}, {0xc0001139e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c81c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c81c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c81c0}, 0xc0000b2300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e9c0?}, {0x4597880, 0xc0000c81c0}, 0xc0000b2300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fc000, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:35 server.go:3197: http: panic serving [::1]:49895: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00009f3e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c82a0}, {0x0, 0x0}, {0xc0001159e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c82a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c82a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c82a0}, 0xc0000b2500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009eea0?}, {0x4597880, 0xc0000c82a0}, 0xc0000b2500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000141540, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:35 server.go:3197: http: panic serving [::1]:49896: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00007c900})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002080e0}, {0x0, 0x0}, {0xc0002239e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002080e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0002080e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002080e0}, 0xc000146200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b950?}, {0x4597880, 0xc0002080e0}, 0xc000146200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001415e0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:35 server.go:3197: http: panic serving [::1]:49897: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00009f4d0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0002081c0}, {0x0, 0x0}, {0xc0002239e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0002081c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0002081c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0002081c0}, 0xc00007e200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007c9c0?}, {0x4597880, 0xc0002081c0}, 0xc00007e200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00023c000, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:40 server.go:3197: http: panic serving [::1]:49898: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00009fb30})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c8380}, {0x0, 0x0}, {0xc0002239e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c8380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755f98?, {0x4597880?, 0xc0000c8380?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c8380}, 0xc00007e300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007ce70?}, {0x4597880, 0xc0000c8380}, 0xc00007e300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fc0a0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:40 server.go:3197: http: panic serving [::1]:49899: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0002ca090})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c8460}, {0x0, 0x0}, {0xc0002239e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c8460}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c8460?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c8460}, 0xc0000b2600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f5f0?}, {0x4597880, 0xc0000c8460}, 0xc0000b2600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fc140, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:44:40 server.go:3197: http: panic serving [::1]:49900: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00007cf00})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000c8540}, {0x0, 0x0}, {0xc0002239e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000c8540}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5755ea8?, {0x4597880?, 0xc0000c8540?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000c8540}, 0xc0000b2700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ca150?}, {0x4597880, 0xc0000c8540}, 0xc0000b2700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fc1e0, {0x4597b38, 0xc00011b590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:44 server.go:3197: http: panic serving [::1]:49922: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000094510})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be000}, 0xc0000a8000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x4597880, 0xc0000be000}, 0xc0000a8000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127360, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:44 server.go:3197: http: panic serving [::1]:49923: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000094a80})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be0e0}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be0e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be0e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001116e0?}, {0x4597880, 0xc0000be0e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127400, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:44 server.go:3197: http: panic serving [::1]:49924: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0001801e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be1c0}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be1c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be1c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be1c0}, 0xc0000a8100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094ba0?}, {0x4597880, 0xc0000be1c0}, 0xc0000a8100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49925: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000095530})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be2a0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be2a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x5711998?, {0x4597880?, 0xc0000be2a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be2a0}, 0xc0000a8200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094ff0?}, {0x4597880, 0xc0000be2a0}, 0xc0000a8200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be000, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49926: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000095a70})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be380}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be380?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be380}, 0xc0001d0000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180300?}, {0x4597880, 0xc0000be380}, 0xc0001d0000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be0a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49927: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022a090})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be460}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be460}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be460?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be460}, 0xc0000a8300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095b30?}, {0x4597880, 0xc0000be460}, 0xc0000a8300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa0a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49928: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000111cb0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001700e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001700e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0001700e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001700e0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000111770?}, {0x4597880, 0xc0001700e0}, 0xc00012c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49929: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000294240})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001701c0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001701c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001701c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001701c0}, 0xc0000a8400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022a1b0?}, {0x4597880, 0xc0001701c0}, 0xc0000a8400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa1e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49930: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022a7b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be540}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be540}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be540?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be540}, 0xc0000a8500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022a270?}, {0x4597880, 0xc0000be540}, 0xc0000a8500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa280, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49931: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000294840})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0001702a0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0001702a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0001702a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0001702a0}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000294300?}, {0x4597880, 0xc0001702a0}, 0xc00012c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa320, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49932: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000294d80})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170380}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc000170380?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170380}, 0xc0000a8600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022a8d0?}, {0x4597880, 0xc000170380}, 0xc0000a8600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa3c0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:45 server.go:3197: http: panic serving [::1]:49933: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022a960})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170460}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170460}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc000170460?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170460}, 0xc00012c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000294e40?}, {0x4597880, 0xc000170460}, 0xc00012c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001274a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:46 server.go:3197: http: panic serving [::1]:49934: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022afc0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be620}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be620}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000be620?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be620}, 0xc00012c500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000295350?}, {0x4597880, 0xc0000be620}, 0xc00012c500)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa460, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:46 server.go:3197: http: panic serving [::1]:49935: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022b500})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be700}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be700}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be700?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be700}, 0xc0000a8700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022aa80?}, {0x4597880, 0xc0000be700}, 0xc0000a8700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa500, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:46 server.go:3197: http: panic serving [::1]:49936: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000295950})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170540}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170540}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc000170540?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170540}, 0xc00012c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000295410?}, {0x4597880, 0xc000170540}, 0xc00012c600)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127540, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:50 server.go:3197: http: panic serving [::1]:49937: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc00022bc50})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be8c0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be8c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be8c0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be8c0}, 0xc0000a8a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022b5c0?}, {0x4597880, 0xc0000be8c0}, 0xc0000a8a00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa5a0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:50 server.go:3197: http: panic serving [::1]:49938: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180360})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000be9a0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000be9a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000be9a0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000be9a0}, 0xc0000a8b00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022bd10?}, {0x4597880, 0xc0000be9a0}, 0xc0000a8b00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa640, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:50 server.go:3197: http: panic serving [::1]:49939: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0003246c0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000bea80}, {0x0, 0x0}, {0xc0002079e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000bea80}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000bea80?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000bea80}, 0xc0000a8c00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000324210?}, {0x4597880, 0xc0000bea80}, 0xc0000a8c00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be140, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:50 server.go:3197: http: panic serving [::1]:49940: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180600})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000beb60}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000beb60}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000beb60?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000beb60}, 0xc0001d0100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180480?}, {0x4597880, 0xc0000beb60}, 0xc0001d0100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be1e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:50 server.go:3197: http: panic serving [::1]:49941: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000180660})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000bec40}, {0x0, 0x0}, {0xc0002039e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000bec40}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0000bec40?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000bec40}, 0xc0000a8f00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000324b70?}, {0x4597880, 0xc0000bec40}, 0xc0000a8f00)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa6e0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:51 server.go:3197: http: panic serving [::1]:49942: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000325140})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000392000}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000392000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc000392000?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000392000}, 0xc00012c700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000295aa0?}, {0x4597880, 0xc000392000}, 0xc00012c700)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be280, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:51 server.go:3197: http: panic serving [::1]:49943: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000325680})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000bed20}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000bed20}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000bed20?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000bed20}, 0xc0001d0200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001807e0?}, {0x4597880, 0xc0000bed20}, 0xc0001d0200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be320, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:51 server.go:3197: http: panic serving [::1]:49944: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 93 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000325b90})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0000bee00}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0000bee00}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc0000bee00?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0000bee00}, 0xc0000a9100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000325740?}, {0x4597880, 0xc0000bee00}, 0xc0000a9100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa780, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:56 server.go:3197: http: panic serving [::1]:49945: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 96 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0002e6150})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170620}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170620}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597880?, 0xc000170620?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170620}, 0xc00012c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000295bf0?}, {0x4597880, 0xc000170620}, 0xc00012c800)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa820, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:56 server.go:3197: http: panic serving [::1]:49946: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 97 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc0002e6690})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc000170700}, {0x0, 0x0}, {0xc0002019e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc000170700}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc000170700?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc000170700}, 0xc0000a9200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000325cb0?}, {0x4597880, 0xc000170700}, 0xc0000a9200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000fa8c0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:53:56 server.go:3197: http: panic serving [::1]:49947: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e80, 0xc000181230})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597880?, 0xc0003920e0}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597880, 0xc0003920e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:30 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597880?, 0xc0003920e0?}, 0x4010385?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597880, 0xc0003920e0}, 0xc0001d0300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180cf0?}, {0x4597880, 0xc0003920e0}, 0xc0001d0300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001be3c0, {0x4597b38, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:59:34 server.go:3197: http: panic serving [::1]:49970: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc00008e090})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc000134000}, {0x0, 0x0}, {0xc0001819e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc000134000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57577b8?, {0x4597860?, 0xc000134000?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc000134000}, 0xc00011c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114030?}, {0x4597860, 0xc000134000}, 0xc00011c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00019f360, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:59:34 server.go:3197: http: panic serving [::1]:49971: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc00008e540})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc0000d0000}, {0x0, 0x0}, {0xc0001859e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc0000d0000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57576c8?, {0x4597860?, 0xc0000d0000?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc0000d0000}, 0xc0001a4100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001896e0?}, {0x4597860, 0xc0000d0000}, 0xc0001a4100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00019f400, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 14:59:34 server.go:3197: http: panic serving [::1]:49972: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc00008eba0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc0000d00e0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc0000d00e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57576c8?, {0x4597860?, 0xc0000d00e0?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc0000d00e0}, 0xc0000fa000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008e660?}, {0x4597860, 0xc0000d00e0}, 0xc0000fa000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f0000, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:04 server.go:3197: http: panic serving [::1]:49973: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc00008f200})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc0000d01c0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc0000d01c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57576c8?, {0x4597860?, 0xc0000d01c0?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc0000d01c0}, 0xc0001a4200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001898f0?}, {0x4597860, 0xc0000d01c0}, 0xc0001a4200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f00a0, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:04 server.go:3197: http: panic serving [::1]:49974: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc0001899b0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc0000d02a0}, {0x0, 0x0}, {0xc0002059e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc0000d02a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57577b8?, {0x4597860?, 0xc0000d02a0?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc0000d02a0}, 0xc0000fa100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008ecc0?}, {0x4597860, 0xc0000d02a0}, 0xc0000fa100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000f0140, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:04 server.go:3197: http: panic serving [::1]:49975: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1e40, 0xc000189fb0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597860?, 0xc0001e80e0}, {0x0, 0x0}, {0xc0001859e0?, 0x3, 0x0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597860, 0xc0001e80e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:31 +0x12b
+net/http.HandlerFunc.ServeHTTP(0x57577b8?, {0x4597860?, 0xc0001e80e0?}, 0x40102e5?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597860, 0xc0001e80e0}, 0xc0001a4300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000189a70?}, {0x4597860, 0xc0001e80e0}, 0xc0001a4300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00019f4a0, {0x4597b18, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:12 server.go:3197: http: panic serving [::1]:49979: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc0001144e0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc00013e000}, {0x0, 0x0}, {0xc0001819e0?, 0x3, 0xc00013e040?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc00013e000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57577b8?, {0x4597840?, 0xc00013e000?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc00013e000}, 0xc000128000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114030?}, {0x4597840, 0xc00013e000}, 0xc000128000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00019f360, {0x4597af8, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:12 server.go:3197: http: panic serving [::1]:49980: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000114a50})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc00013e0e0}, {0x0, 0x0}, {0xc0001839e0?, 0x3, 0xc00013e120?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc00013e0e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57576c8?, {0x4597840?, 0xc00013e0e0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc00013e0e0}, 0xc0001a4100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001896e0?}, {0x4597840, 0xc00013e0e0}, 0xc0001a4100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00019f400, {0x4597af8, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:00:12 server.go:3197: http: panic serving [::1]:49981: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000189ce0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0001e80e0}, {0x0, 0x0}, {0xc0001819e0?, 0x3, 0xc0001e8120?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:20 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0001e80e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57576c8?, {0x4597840?, 0xc0001e80e0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0001e80e0}, 0xc000128100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114b70?}, {0x4597840, 0xc0001e80e0}, 0xc000128100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00017a000, {0x4597af8, 0xc000189590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:19 server.go:3197: http: panic serving [::1]:50006: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000180090})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0000b4000}, {0x0, 0x0}, {0xc0001099e0?, 0x3, 0xc0000b4040?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0000b4000}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597840?, 0xc0000b4000?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0x4597840, 0xc0000b4000}, 0xc00009c000)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127360, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:19 server.go:3197: http: panic serving [::1]:50007: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000094990})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0000b40e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0xc0000b4120?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0000b40e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597840?, 0xc0000b40e0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0000b40e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001116e0?}, {0x4597840, 0xc0000b40e0}, 0xc00012c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000127400, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:19 server.go:3197: http: panic serving [::1]:50008: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000094ff0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0000b41c0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0xc0000b4200?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0000b41c0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57576f8?, {0x4597840?, 0xc0000b41c0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0000b41c0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094ab0?}, {0x4597840, 0xc0000b41c0}, 0xc00009c100)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000e6000, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:20 server.go:3197: http: panic serving [::1]:50009: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc0001118f0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0000b42a0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0xc0000b42e0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0000b42a0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x5711998?, {0x4597840?, 0xc0000b42a0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0000b42a0}, 0xc00009c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095170?}, {0x4597840, 0xc0000b42a0}, 0xc00009c300)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000e60a0, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:20 server.go:3197: http: panic serving [::1]:50010: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000111e30})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0001700e0}, {0x0, 0x0}, {0xc00010d9e0?, 0x3, 0xc000170120?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0001700e0}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597840?, 0xc0001700e0?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0001700e0}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095110?}, {0x4597840, 0xc0001700e0}, 0xc00009c200)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000e6140, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:05:20 server.go:3197: http: panic serving [::1]:50011: open app/views/templates/private_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1825 +0xbf
+panic({0x44b1de0, 0xc000095bc0})
+	/usr/local/Cellar/go/1.18.4/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/Cellar/go/1.18.4/libexec/src/html/template/template.go:374
+Go_CRUD/app/controllers.generateHTML({0x4597840?, 0xc0000b4380}, {0x0, 0x0}, {0xc00010b9e0?, 0x3, 0xc0000b43c0?})
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/sever.go:19 +0x106
+Go_CRUD/app/controllers.index({0x4597840, 0xc0000b4380}, 0x0?)
+	/Users/tmsic/go/src/Go_CRUD/app/controllers/route_main.go:34 +0x1ac
+net/http.HandlerFunc.ServeHTTP(0x57577e8?, {0x4597840?, 0xc0000b4380?}, 0x4010205?)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4597840, 0xc0000b4380}, 0xc00009c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095680?}, {0x4597840, 0xc0000b4380}, 0xc00009c400)
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000e61e0, {0x4597af8, 0xc000111590})
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.18.4/libexec/src/net/http/server.go:3071 +0x4db
+2022/08/06 15:16:47 users.go:136: no such table: session
+2022/08/06 15:17:56 users.go:136: no such table: session
+2022/08/06 15:18:30 users.go:136: no such table: session
+2022/08/06 15:30:28 route_main.go:36: sql: no rows in result set
+2022/08/06 15:30:28 route_main.go:36: sql: no rows in result set

@@ -8,9 +8,16 @@ import (
 
 //ハンドラ作成
 func signup(w http.ResponseWriter, r *http.Request) {
-
 	if r.Method == "GET" {
-		generateHTML(w, nil, "layout", "public_navbar", "signup")
+		_, err := session(w, r)
+
+		//セッションが存在しない場合
+		if err != nil {
+			generateHTML(w, nil, "layout", "public_navbar", "signup")
+		} else {
+			//セッションが存在する場合
+			http.Redirect(w, r, "/todos", 302)
+		}
 	} else if r.Method == "POST" {
 
 		//POSTリクエスト受け取れる(ParseForm)
@@ -33,14 +40,19 @@ func signup(w http.ResponseWriter, r *http.Request) {
 
 //ログイン画面を返すハンドラ
 func login(w http.ResponseWriter, r *http.Request) {
-	generateHTML(w, nil, "layout", "public_navbar", "login")
+	_, err := session(w, r)
+	if err != nil {
+		generateHTML(w, nil, "layout", "public_navbar", "login")
+	} else {
+		http.Redirect(w, r, "/todos", 302)
+	}
 }
 
 //ログイン セッション確認ハンドラ
 func authenticate(w http.ResponseWriter, r *http.Request) {
 	//パラメータを全て取得(ParseForm)
 	err := r.ParseForm()
-	
+
 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
 
 	if err != nil {
@@ -64,4 +76,16 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	} else {
 		http.Redirect(w, r, "/login", 302)
 	}
+}
+
+func logout(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie("_cookie")
+	if err != nil {
+		log.Println(err)
+	}
+	if err != http.ErrNoCookie {
+		session := models.Session{UUID: cookie.Value}
+		session.DeleteSessionByUUID()
+	}
+	http.Redirect(w, r, "/login", 302)
 }

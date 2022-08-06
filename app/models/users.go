@@ -12,6 +12,7 @@ type User struct {
 	Email      string
 	Password   string
 	Created_at time.Time
+	Todos      []Todo
 }
 
 type Session struct {
@@ -80,7 +81,6 @@ func (u *User) DeleteUser() (err error) {
 	return err
 }
 
-
 //セレクト(ユーザが入力したEmialで探す)
 func GetUserByEmail(email string) (user User, err error) {
 	user = User{}
@@ -127,4 +127,27 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 	}
 
 	return valid, err
+}
+
+//セッション削除する処理 DeleteSessionByUUID
+func (sess *Session) DeleteSessionByUUID() (err error) {
+	cmd := `delete from sessions where uuid = ?`
+	_, err = Db.Exec(cmd, sess.UUID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	return err
+}
+
+func (sess *Session) GetUserBySession() (user User, err error) {
+	user = User{}
+	cmd := `select id,uuid, name, email, created_at from users where id = ?`
+	err = Db.QueryRow(cmd, sess.UserID).Scan(
+		&user.ID,
+		&user.UUID,
+		&user.Name,
+		&user.Email,
+		&user.Created_at)
+	return user, err
 }
