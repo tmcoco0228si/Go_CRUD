@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"regexp"
+	"strconv"
 )
 
 //テンプレートを渡して表示するハンドラ関数を共通化する関数
@@ -32,6 +34,30 @@ func session(writer http.ResponseWriter, request *http.Request) (sess models.Ses
 	return
 }
 
+//文字列の正規表現
+
+var validPath = regexp.MustCompile("^/todos/(edit|save|update|delete)/([0-9]+)$")
+
+func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, r *http.Request) {
+		// /todos/edit/1
+		//validPathとURLがマッチした箇所を変数に代入
+		q := validPath.FindStringSubmatch(r.URL.Path)
+		if q == nil {
+			http.NotFound(w, r)
+			return
+		}
+		//URL末尾にIDがついてきていると仮定して、ついている場合、数値型に変換して代入している。
+		qi, err := strconv.Atoi(q[2])
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+		fn(w, r, qi)
+	}
+}
+
 //サーバ起動
 func StartMainServer() error {
 	files := http.FileServer(http.Dir(config.Config.Static))
@@ -45,6 +71,9 @@ func StartMainServer() error {
 	http.HandleFunc("/logout", logout)
 	http.HandleFunc("/todos", index)
 	http.HandleFunc("/todos/new", todoNew)
+	http.HandleFunc("/todos/save", todoSave)
+	http.HandleFunc("/todos/edit/", parseURL(todoEdit))
+	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
 
 	//(ポート番号, デフォルトマルチプレクサ)
 	//登録されていないURLにアクセスすると404を返す設定がnil
