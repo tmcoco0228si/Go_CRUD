@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-
 type User struct {
 	ID         int
 	UUID       string
