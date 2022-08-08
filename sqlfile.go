@@ -20,7 +20,7 @@ func sqlfile() {
 	// 	u.CreateUser()
 
 	// 	//取得
-	// 	u, _ := models.GetUser(1)
+	// 	u, _ := models.GetUser(1)					
 	// 	fmt.Println(u)
 
 	// 	//UPDATE

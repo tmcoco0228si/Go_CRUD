@@ -74,6 +74,7 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/save", todoSave)
 	http.HandleFunc("/todos/edit/", parseURL(todoEdit))
 	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
+	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 
 	//(ポート番号, デフォルトマルチプレクサ)
 	//登録されていないURLにアクセスすると404を返す設定がnil
