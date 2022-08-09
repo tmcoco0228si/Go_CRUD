@@ -8,7 +8,6 @@ func sqlfile() {
 	// 	fmt.Println(config.Config.LogFile)
 	// 	log.Println("test")
 
-	
 	// 	//INSERT
 	// 	fmt.Println(models.Db)
 	// 	u := &models.User{}
@@ -21,7 +20,7 @@ func sqlfile() {
 	// 	u.CreateUser()
 
 	// 	//取得
-	// 	u, _ := models.GetUser(1)					
+	// 	u, _ := models.GetUser(1)
 	// 	fmt.Println(u)
 
 	// 	//UPDATE
