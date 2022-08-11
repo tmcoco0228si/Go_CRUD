@@ -8,6 +8,7 @@ func sqlfile() {
 	// 	fmt.Println(config.Config.LogFile)
 	// 	log.Println("test")
 
+	
 	// 	//INSERT
 	// 	fmt.Println(models.Db)
 	// 	u := &models.User{}
