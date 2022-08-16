@@ -18,7 +18,9 @@ func generateHTML(writer http.ResponseWriter, data interface{}, filenames ...str
 		files = append(files, fmt.Sprintf("app/views/templates/%s.html", file))
 	}
 
+	//<< template.ParseFiles >> 外部ファイルを取り込む
 	templates := template.Must(template.ParseFiles(files...))
+	//<< ExecuteTemplate >>テンプレートへの値の埋め込み
 	templates.ExecuteTemplate(writer, "layout", data)
 }
 
@@ -60,6 +62,13 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 
 //サーバ起動
 func StartMainServer() error {
+	//handerを返す
+	// << Dir >> string型のディレクトリ名 "html" を http.Dir型 にキャストする
+	// http.Dir型 は FileSystemインターフェースを満たすので
+	// これを http.FileServer() に渡して 静的ファイルを返すハンドラを得る
+	//<< StripPrefix >> filesを元に、先頭の "/static/" を除外するハンドラを作成する
+	// DefaultServeMux に URLパス "/file/" と split_prefix_hdlr のペアを追加する
+
 	files := http.FileServer(http.Dir(config.Config.Static))
 	http.Handle("/static/", http.StripPrefix("/static/", files))
 

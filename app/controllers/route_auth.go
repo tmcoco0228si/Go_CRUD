@@ -8,6 +8,7 @@ import (
 
 //ハンドラ作成
 func signup(w http.ResponseWriter, r *http.Request) {
+	
 	if r.Method == "GET" {
 		_, err := session(w, r)
 
@@ -26,6 +27,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 			log.Println(err)
 		}
 		user := &models.User{
+			//<< PostFormValue >> keyを指定してformの値取得
 			Name:     r.PostFormValue("name"),
 			Email:    r.PostFormValue("email"),
 			Password: r.PostFormValue("password"),
@@ -40,6 +42,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 
 //ログイン画面を返すハンドラ
 func login(w http.ResponseWriter, r *http.Request) {
+	//セッション情報があるかチェック
 	_, err := session(w, r)
 	if err != nil {
 		generateHTML(w, nil, "layout", "public_navbar", "login")

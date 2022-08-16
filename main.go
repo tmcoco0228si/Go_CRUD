@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println(models.Db)
+	//サーバ起動
 	controllers.StartMainServer()
-
 }
