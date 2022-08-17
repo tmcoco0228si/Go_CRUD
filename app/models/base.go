@@ -16,6 +16,7 @@ var Db *sql.DB
 
 var err error
 
+//列挙型の定数定義
 const (
 	tableNameUser    = "users"
 	tableNameTodo    = "todos"
@@ -30,9 +31,9 @@ func init() {
 	//table作成 %s=文字列(string)
 	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
-	  uuid STRING NOT NULL UNIQUE,
-	  name STRING,
-	  email STRING,
+		uuid STRING NOT NULL UNIQUE,
+		name STRING,
+		email STRING,
 		password STRING,
 		created_at DATETIME)`, tableNameUser)
 	Db.Exec(cmdU)

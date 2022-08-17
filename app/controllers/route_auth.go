@@ -56,17 +56,19 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	//パラメータを全て取得(ParseForm)
 	err := r.ParseForm()
 
+	//userが入力したメールアドレスの認証
 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
 
 	if err != nil {
 		log.Println(err)
 		http.Redirect(w, r, "/login", 302)
 	}
+
 	if user.Password == models.Encrypt(r.PostFormValue("password")) {
 		session, err := user.CreateSession()
 		if err != nil {
 			log.Println(err)
-		}
+    }
 
 		cookie := http.Cookie{
 			Name:     "_cookie",
@@ -81,6 +83,7 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//ログアウト処理（付与したセッション削除）
 func logout(w http.ResponseWriter, r *http.Request) {
 	cookie, err := r.Cookie("_cookie")
 	if err != nil {

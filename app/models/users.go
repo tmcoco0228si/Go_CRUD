@@ -23,6 +23,8 @@ type Session struct {
 	Created_at time.Time
 }
 
+
+//新規ユーザ作成メソッド
 func (u *User) CreateUser() (err error) {
 	//SQL生成
 	cmd := `INSERT INTO users (
@@ -132,6 +134,7 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 //セッション削除する処理 DeleteSessionByUUID
 func (sess *Session) DeleteSessionByUUID() (err error) {
 	cmd := `delete from sessions where uuid = ?`
+	//第二引数にはプレースホルダーに格納するための値
 	_, err = Db.Exec(cmd, sess.UUID)
 	if err != nil {
 		log.Fatalln(err)

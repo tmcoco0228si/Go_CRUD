@@ -16,6 +16,7 @@ func sqlfile() {
 	// 	u.Password = "testtest"
 	// 	fmt.Println(u)
 
+	
 	// 	u.CreateUser()
 
 	// 	//取得

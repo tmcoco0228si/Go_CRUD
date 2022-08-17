@@ -30,6 +30,8 @@ func LoadConfig() {
 
 	//configに設定
 	Config = ConfigList{
+		/*iniファイルのSectionがwebでKeyがPortのものをPortとする。
+		該当するデータがない場合8080とする。*/
 		Port:      cfg.Section("web").Key("Port").MustString("8080"),
 		SQLDriver: cfg.Section("db").Key("driver").String(),
 		DbName:    cfg.Section("db").Key("name").String(),
