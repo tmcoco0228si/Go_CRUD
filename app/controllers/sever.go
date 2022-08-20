@@ -37,7 +37,6 @@ func session(writer http.ResponseWriter, request *http.Request) (sess models.Ses
 }
 
 //文字列の正規表現
-
 var validPath = regexp.MustCompile("^/todos/(edit|save|update|delete)/([0-9]+)$")
 
 func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
