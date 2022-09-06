@@ -12,7 +12,6 @@ import (
 )
 
 
-
 //テンプレートを渡して表示するハンドラ関数を共通化する関数
 func generateHTML(writer http.ResponseWriter, data interface{}, filenames ...string) {
 	var files []string
