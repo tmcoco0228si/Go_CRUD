@@ -19,6 +19,7 @@ func generateHTML(writer http.ResponseWriter, data interface{}, filenames ...str
 		files = append(files, fmt.Sprintf("app/views/templates/%s.html", file))
 	}
 
+	
 	//<< template.ParseFiles >> 外部ファイルを取り込む
 	templates := template.Must(template.ParseFiles(files...))
 	//<< ExecuteTemplate >>テンプレートへの値の埋め込み
