@@ -11,7 +11,6 @@ import (
 	"strconv"
 )
 
-
 //テンプレートを渡して表示するハンドラ関数を共通化する関数
 func generateHTML(writer http.ResponseWriter, data interface{}, filenames ...string) {
 	var files []string
@@ -19,15 +18,11 @@ func generateHTML(writer http.ResponseWriter, data interface{}, filenames ...str
 		files = append(files, fmt.Sprintf("app/views/templates/%s.html", file))
 	}
 
-	
 	//<< template.ParseFiles >> 外部ファイルを取り込む
 	templates := template.Must(template.ParseFiles(files...))
 	//<< ExecuteTemplate >>テンプレートへの値の埋め込み
 	templates.ExecuteTemplate(writer, "layout", data)
 }
-
-
-
 
 //クッキー取得
 func session(writer http.ResponseWriter, request *http.Request) (sess models.Session, err error) {
@@ -60,6 +55,7 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 			http.NotFound(w, r)
 			return
 		}
+		//引数に受け取った関数
 		fn(w, r, qi)
 	}
 }
