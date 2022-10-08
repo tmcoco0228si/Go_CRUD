@@ -61,6 +61,7 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 }
 
 
+
 //サーバ起動
 func StartMainServer() error {
 	//handerを返す
